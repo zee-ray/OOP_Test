@@ -26,7 +26,8 @@ istream & operator>>(istream & in, Cylinder & cldr)
 
 ostream & operator<<(ostream & out, Cylinder & cldr)
 {
-    out<<fixed<<std::setprecision(3);
+    out<<fixed;
+    out<<std::setprecision(3);
     out<<"Circumference: "<<cldr.Circumference()<<endl
        <<"SurfaceArea: "<<cldr.SurfaceArea()<<endl
        <<"Volume: "<<cldr.Volume();
